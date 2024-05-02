@@ -1,5 +1,7 @@
 import React from "react";
+import Biodata from "./Biodata";
 import Header from "./Header";
+import Highlight from "./Highlight";
 import Identitiy from "./Identitiy";
 
 export default function Card() {
@@ -9,7 +11,10 @@ export default function Card() {
         <Header />
         <Identitiy />
       </div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <Biodata />
+        <Highlight />
+      </div>
     </div>
   );
 }

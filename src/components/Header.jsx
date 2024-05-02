@@ -5,21 +5,34 @@ export default function Header() {
     <>
       <div className="social-buttons">
         <SocialButton icon="fa-brands fa-facebook" />
-        <SocialButton icon="fa-brands fa-instagram" />
+        <SocialButton
+          icon="fa-brands fa-instagram"
+          link="https://www.instagram.com/justin.hezelnat30/"
+        />
         <SocialButton icon="fa-brands fa-twitter" />
       </div>
       <div className="social-buttons right">
-        <SocialButton icon="fa-brands fa-linkedin" />
-        <SocialButton icon="fa-brands fa-github" />
+        <SocialButton
+          icon="fa-brands fa-linkedin"
+          link="www.linkedin.com/in/justinhezekiel30
+
+"
+        />
+        <SocialButton
+          icon="fa-brands fa-github"
+          link="https://github.com/Hezelnat30"
+        />
       </div>
     </>
   );
 }
 
-function SocialButton({ icon }) {
+function SocialButton({ icon, link }) {
   return (
     <button>
-      <i className={icon}></i>
+      <a href={link} target="_blank">
+        <i className={icon}></i>
+      </a>
     </button>
   );
 }
